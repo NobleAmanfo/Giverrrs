@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:giverrrs/Home/Login/GetStarted.dart';
+import 'package:giverrrs/Register.dart';
 import 'package:giverrrs/widgets/quick_link_widget.dart';
 import 'package:fl_chart/fl_chart.dart';
-// import 'package:motion_tab_bar/motiontabbar.dart';
 
 void main() {
   runApp(MaterialApp(
-    home: GetStarted(),
+    home: Register(),
   ));
 }
 
@@ -44,7 +44,8 @@ class _HomeState extends State<Home> {
     return Scaffold(
         backgroundColor: Colors.grey[100],
         extendBodyBehindAppBar: true,
-        body: Stack(children: [
+        body: Stack(
+            children: [
           Container(
             height: 250,
             width: double.infinity,
@@ -611,24 +612,26 @@ class _HomeState extends State<Home> {
                   ),
                 ),
               ])),
-          Container(
-            margin: EdgeInsets.fromLTRB(0, 900, 0, 0),
-            height: double.infinity,
-            width: double.infinity,
-            decoration: BoxDecoration(
-                boxShadow: [
-                  BoxShadow(
-                    color: Color(0x1A567DF4),
-                    blurRadius: 5, // soften the shadow
-                    spreadRadius: 1, //extend the shadow
-                  )
-                ],
-                color: Colors.white,
-                borderRadius: BorderRadius.only(
-                    topLeft: Radius.circular(30),
-                    topRight: Radius.circular(30))),
-          )
-        ]));
+          // Container(
+          //   margin: EdgeInsets.fromLTRB(0, 900, 0, 0),
+          //   height: double.infinity,
+          //   width: double.infinity,
+          //   decoration: BoxDecoration(
+          //       boxShadow: [
+          //         BoxShadow(
+          //           color: Color(0x1A567DF4),
+          //           blurRadius: 5, // soften the shadow
+          //           spreadRadius: 1, //extend the shadow
+          //         )
+          //       ],
+          //       color: Colors.white,
+          //       borderRadius: BorderRadius.only(
+          //           topLeft: Radius.circular(30),
+          //           topRight: Radius.circular(30))),
+          // )
+
+        ]),
+    );
   }
 }
 
